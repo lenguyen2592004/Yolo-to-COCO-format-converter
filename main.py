@@ -219,7 +219,7 @@ def get_args():
 
 def main(opt):
     output_name = opt.output
-    output_path = "output/" + output_name
+    output_path = output_name
 
     print("Start!")
 
