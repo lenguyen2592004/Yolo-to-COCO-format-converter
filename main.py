@@ -65,13 +65,11 @@ def get_images_info_and_annotations(opt):
             # coco format - (annotation_id, x_upper_left, y_upper_left, width, height)
             for line1 in label_read_line:
                 label_line = line1
-                category_id = (
-                    int(label_line.split()[0]) + 1
-                )  # you start with annotation id with '1'
-                x_center = float(label_line.split()[1])
-                y_center = float(label_line.split()[2])
-                width = float(label_line.split()[3])
-                height = float(label_line.split()[4])
+                category_id = 1  # you start with annotation id with '1'
+                x_center = float(label_line.split()[0])
+                y_center = float(label_line.split()[1])
+                width = float(label_line.split()[2])
+                height = float(label_line.split()[3])
 
                 float_x_center = w * x_center
                 float_y_center = h * y_center
@@ -137,11 +135,11 @@ def debug(opt):
         for line1 in label_read_line:
             label_line = line1
 
-            category_id = label_line.split()[0]
-            x_center = float(label_line.split()[1])
-            y_center = float(label_line.split()[2])
-            width = float(label_line.split()[3])
-            height = float(label_line.split()[4])
+            category_id = 1#label_line.split()[0]
+            x_center = float(label_line.split()[0])#float(label_line.split()[1])
+            y_center = float(label_line.split()[1])#float(label_line.split()[2])
+            width = float(label_line.split()[2])#float(label_line.split()[3])
+            height = float(label_line.split()[3])#float(label_line.split()[4])
 
             int_x_center = int(img_file.shape[1] * x_center)
             int_y_center = int(img_file.shape[0] * y_center)
