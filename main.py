@@ -135,7 +135,7 @@ def debug(opt):
         for line1 in label_read_line:
             label_line = line1
 
-            category_id = 1#label_line.split()[0]
+            category_id = 0#label_line.split()[0]
             x_center = float(label_line.split()[0])#float(label_line.split()[1])
             y_center = float(label_line.split()[1])#float(label_line.split()[2])
             width = float(label_line.split()[2])#float(label_line.split()[3])
