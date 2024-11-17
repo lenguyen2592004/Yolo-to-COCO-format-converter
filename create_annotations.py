@@ -30,7 +30,7 @@ def create_annotation_from_yolo_format(
         "bbox": bbox,
         "area": area,
         "iscrowd": 0,
-        "category_id": category_id,
+        "category_id": 1,
         "segmentation": seg,
     }
 
@@ -43,7 +43,7 @@ def create_annotation_from_yolo_results_format(
     
     annotation = [{
         "image_id": image_id,
-        "category_id": category_id,
+        "category_id": 1,
         "bbox": bbox,
         "score": conf
     }]
