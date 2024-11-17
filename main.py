@@ -20,8 +20,7 @@ import imagesize
 YOLO_DARKNET_SUB_DIR = "YOLO_darknet"
 
 classes = [
-    "matricula",
-    "cara"
+    "signboard",
 ]
 
 
